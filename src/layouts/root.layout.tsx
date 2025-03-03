@@ -4,6 +4,7 @@ import NikeLogo from "../assets/nike.svg"
 import { Outlet } from "react-router"
 import { Button } from "@heroui/button"
 import { WhatsappIcon } from "../assets/whatsapp-icon"
+import { Footer } from "../components/Footer"
 
 const navItems: { nav: string }[] = [
     { nav: "home" },
@@ -55,6 +56,7 @@ export const RootLayout: FC = () => {
             <Outlet />
 
             {/* Footer */}
+            <Footer />
             <div>
 
             </div>
