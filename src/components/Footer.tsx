@@ -1,14 +1,14 @@
 import { InstagramIcon } from "../assets/instagram-icon";
 import { FbIcon } from "../assets/fb-icon";
 import { TwitterIcon } from "../assets/twiiter-icon";
-import logo from '../assets/nike.svg'
+import logo from '../assets/nike.svg';
 import { motion } from "framer-motion";
 
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-background text-textSecondary py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+        <div className="grid  grid-cols-1 mobile:grid-cols-2 lg:grid-cols-4 gap-8 items-start ">
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-semibold mb-4 text-textPrimary">Quick Links</h3>
@@ -88,7 +88,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Logo Positioned at the Right */}
-          <div className="flex justify-end items-start">
+          <div className="">
             <img src={logo} alt="Nike Logo" className="w-28 h-20 object-contain" />
           </div>
         </div>
