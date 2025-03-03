@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@heroui/button": "^2.2.15",
+    "@heroui/card": "^2.2.14",
+    "@heroui/image": "^2.2.10",
     "@heroui/navbar": "^2.2.13",
     "@heroui/system": "^2.4.11",
     "@heroui/theme": "^2.4.11",

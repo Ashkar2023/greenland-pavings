@@ -10,3 +10,28 @@
     --text-primary: 16 16 16; /* #101010 */
     --text-secondary: 78 82 80; /* #4e5250 */
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+.no-scrollbar{
+    scrollbar-width: none; /* FireFox */
+    -ms-overflow-style: none;
+}
+
+/* Target WebKit-based browsers */
+.slim-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Change this to adjust the scrollbar width */
+    height: 8px; /* Adjust for horizontal scrollbar */
+}
+
+/* Scrollbar thumb (the draggable part) */
+.slim-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--accent)); /* Thumb color */
+    border-radius: 20px; /* Rounded thumb */
+}
