@@ -4,6 +4,7 @@ import NikeLogo from "../assets/nike.svg"
 import { Outlet } from "react-router"
 import { Button } from "@heroui/button"
 import { WhatsappIcon } from "../assets/whatsapp-icon"
+import { Footer } from "../components/Footer"
 
 const navItems: { nav: string }[] = [
     { nav: "home" },
@@ -12,8 +13,8 @@ const navItems: { nav: string }[] = [
 ]
 
 export const RootLayout: FC = () => {
+
     return (
-        // smaller text size on smaller screens
         <div className="">
 
             {/* Header */}
@@ -52,12 +53,11 @@ export const RootLayout: FC = () => {
                 </NavbarMenu>
             </Navbar>
 
+            {/* Content */}
             <Outlet />
 
             {/* Footer */}
-            <div>
-
-            </div>
+            <Footer />
         </div>
     )
 }

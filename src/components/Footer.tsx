@@ -1,0 +1,104 @@
+import { InstagramIcon } from "../assets/instagram-icon";
+import { FbIcon } from "../assets/fb-icon";
+import { TwitterIcon } from "../assets/twiiter-icon";
+import logo from '../assets/nike.svg'
+import { motion } from "framer-motion";
+
+export const Footer: React.FC = () => {
+  return (
+    <footer className="bg-background text-textSecondary py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-textPrimary">Quick Links</h3>
+            <ul className="space-y-2">
+              {["Home", "Products", "About us"].map((item) => (
+                <li key={item}>
+                  <a href="#" className="hover:text-gray-900 transition duration-300" aria-label={`Shop ${item}`}>
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Social Media */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-textPrimary">Connect With Us</h3>
+            <div className="flex space-x-4 mb-6">
+              <motion.a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2, y: -5 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <InstagramIcon />
+              </motion.a>
+
+              <motion.a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2, y: -5 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <FbIcon />
+              </motion.a>
+
+              <motion.a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2, y: -5 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <TwitterIcon />
+              </motion.a>
+            </div>
+          </div>
+
+          {/* Contact Information */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-textPrimary">Contact Us</h3>
+            <div className="space-y-2">
+              <div className="flex flex-col">
+                <span className="font-medium">Greenland Pavings</span>
+                <span>Seraphin Building, Ponneth Temple Road</span>
+                <span>West End, Kadavanthra, Kochi.</span>
+                <span>Kerala - 682 020</span>
+              </div>
+
+              <div className="flex items-center space-x-2">
+                <span className="font-medium">Call:</span>
+                <span>+91 95447 90002 / 98470 44660</span>
+              </div>
+
+              <div className="flex items-center space-x-2">
+                <span className="font-medium">Email:</span>
+                <a href="mailto:sales@pgpavers.com" className="text-blue-500 hover:underline">
+                  sales@pgpavers.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Logo Positioned at the Right */}
+          <div className="flex justify-end items-start">
+            <img src={logo} alt="Nike Logo" className="w-28 h-20 object-contain" />
+          </div>
+        </div>
+
+        {/* Footer Bottom Section */}
+        <div className="mt-12 border-t border-gray-700 pt-8 text-center text-sm">
+          <p>© 2024 Your E-Commerce. All rights reserved.</p>
+          <p className="mt-2">Secure transactions guaranteed | SSL Protected</p>
+        </div>
+      </div>
+    </footer>
+  );
+};

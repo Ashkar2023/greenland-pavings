@@ -1,0 +1,52 @@
+[
+    {
+        "name": "EcoStone Paver",
+        "model": "ESP-001",
+        "description": "Durable and eco-friendly paver made from recycled materials.",
+        "images": [
+            "https://placehold.co/600x400/2E8B57/FFFFFF/png?text=EcoStone+Paver+1",
+            "https://placehold.co/600x400/3CB371/000000/png?text=EcoStone+Paver+2",
+            "https://placehold.co/600x400/228B22/FFFFFF/png?text=EcoStone+Paver+3"
+        ]
+    },
+    {
+        "name": "Classic Brick",
+        "model": "CB-002",
+        "description": "Traditional brick paver with a timeless look.",
+        "images": [
+            "https://placehold.co/600x400/8B0000/FFFFFF/png?text=Classic+Brick+1",
+            "https://placehold.co/600x400/B22222/000000/png?text=Classic+Brick+2",
+            "https://placehold.co/600x400/A52A2A/FFFFFF/png?text=Classic+Brick+3"
+        ]
+    },
+    {
+        "name": "Granite Slab",
+        "model": "GS-003",
+        "description": "Premium granite slab for a luxurious finish.",
+        "images": [
+            "https://placehold.co/600x400/696969/FFFFFF/png?text=Granite+Slab+1",
+            "https://placehold.co/600x400/A9A9A9/000000/png?text=Granite+Slab+2",
+            "https://placehold.co/600x400/808080/FFFFFF/png?text=Granite+Slab+3"
+        ]
+    },
+    {
+        "name": "Modern Concrete",
+        "model": "MC-004",
+        "description": "Sleek and modern concrete paver for contemporary designs.",
+        "images": [
+            "https://placehold.co/600x400/708090/FFFFFF/png?text=Modern+Concrete+1",
+            "https://placehold.co/600x400/778899/000000/png?text=Modern+Concrete+2",
+            "https://placehold.co/600x400/2F4F4F/FFFFFF/png?text=Modern+Concrete+3"
+        ]
+    },
+    {
+        "name": "Rustic Cobblestone",
+        "model": "RC-005",
+        "description": "Charming cobblestone paver with a rustic appeal.",
+        "images": [
+            "https://placehold.co/600x400/DAA520/FFFFFF/png?text=Rustic+Cobblestone+1",
+            "https://placehold.co/600x400/8B4513/000000/png?text=Rustic+Cobblestone+2",
+            "https://placehold.co/600x400/CD853F/FFFFFF/png?text=Rustic+Cobblestone+3"
+        ]
+    }
+]

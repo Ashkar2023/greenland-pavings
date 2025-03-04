@@ -1,6 +1,8 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { RootLayout } from "../layouts/root.layout";
 import { HomePage } from "../pages/home/home";
+import { ProductsListPage } from "../pages/product/productsList.page";
+import { ProductDetailPage } from "../pages/product/productDetail.page";
 
 export const appRouter = createBrowserRouter([
     {
@@ -10,11 +12,19 @@ export const appRouter = createBrowserRouter([
             {
                 index: true,
                 element: <HomePage />
+            },
+            {
+                path: "/products",
+                element: <ProductsListPage />
+            },
+            {
+                path: "/product/:model",
+                element: <ProductDetailPage />
             }
         ]
     },
     {
-        path:"*",
-        element : <Navigate to={"/"} replace />
+        path: "*",
+        element: <Navigate to={"/"} replace />
     }
 ])
