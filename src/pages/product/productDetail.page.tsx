@@ -1,8 +1,7 @@
 
+
 export const ProductDetailPage = () => {
-    return (
-        <div>
-                        
-        </div>
-    )
-}
+  return (
+    <h1>product details page</h1>
+  );
+};
