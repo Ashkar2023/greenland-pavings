@@ -2,12 +2,6 @@ import { useParams } from "react-router";
 
 
 export const ProductDetailPage = () => {
-<<<<<<< HEAD
-  return (
-    <h1>product details page</h1>
-  );
-};
-=======
     const { model } = useParams();
 
     return (
@@ -19,4 +13,3 @@ export const ProductDetailPage = () => {
         </div>
     )
 }
->>>>>>> c5a7dc30d487b572d8da4e356719825b6083d070
