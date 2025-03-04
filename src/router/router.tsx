@@ -18,7 +18,7 @@ export const appRouter = createBrowserRouter([
                 element: <ProductsListPage />
             },
             {
-                path: "/product/:modelNumber",
+                path: "/product/:model",
                 element: <ProductDetailPage />
             }
         ]

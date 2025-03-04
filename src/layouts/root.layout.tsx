@@ -13,8 +13,8 @@ const navItems: { nav: string }[] = [
 ]
 
 export const RootLayout: FC = () => {
+
     return (
-        // smaller text size on smaller screens
         <div className="">
 
             {/* Header */}
@@ -53,13 +53,11 @@ export const RootLayout: FC = () => {
                 </NavbarMenu>
             </Navbar>
 
+            {/* Content */}
             <Outlet />
 
             {/* Footer */}
             <Footer />
-            <div>
-
-            </div>
         </div>
     )
 }
