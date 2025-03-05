@@ -1,4 +1,7 @@
-import { ProductCardsSlider } from "../../components/productCardsSlider"
+import { Button } from "@heroui/button";
+import { BentoGrid } from "../../components/bentoGrid";
+import { ProductCardsSlider } from "../../components/productCardsSlider";
+import { Search } from "lucide-react";
 
 const fakeProducts = [
     {
@@ -38,8 +41,25 @@ export const HomePage = () => {
     return (
         <div className="bg-green-300">
             {/* hero section */}
-            <div className="lg:h-[550px] bg-yellow-50" id="hero">
+            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-black" id="hero">
+                <BentoGrid />
 
+                <div className="w-1/3 text-textSecondary flex flex-col justify-center">
+                    <h2 className="text-white text-3xl font-semibold">
+                        Elevate Your Outdoors with Timeless Paving & Kerbs
+                    </h2>
+                    <p className="text-white text-lg mt-4">
+                        Enhance your spaces with premium <span className="font-medium">tiles, paving, and kerbs</span> designed for durability and style. Whether for driveways, patios, or walkways, our expert-crafted solutions bring elegance and strength to every project. <span className="font-medium">Quality that lasts, beauty that stands out.</span>
+                    </p>
+
+                    <Button
+                        startContent={<Search strokeWidth={"1px"}/>}
+                        radius="sm"
+                        className="mt-8 font-medium"
+                        >
+                        Browse products
+                    </Button>
+                </div>
             </div>
 
             <div className="my-4 flex justify-center">
