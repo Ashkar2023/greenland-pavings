@@ -10,7 +10,7 @@ interface EmblaCarouselProps {
     delay?: number
 }
 
-export const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ images, pauseVisible = true, scrollHandlesVisible = false, delay = 4000 }) => {
+export const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ images, pauseVisible = true, scrollHandlesVisible = true, delay = 4000 }) => {
     const [isPlaying, setIsPlaying] = useState(true);
     const autoplay = Autoplay({ stopOnInteraction: false, delay });
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [autoplay]);
