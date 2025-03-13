@@ -39,9 +39,9 @@ const fakeCateggories = ["category 1", "category 2", "category 3"];
 
 export const HomePage = () => {
     return (
-        <div className="bg-green-300">
+        <div className="bg-accent">
             {/* hero section */}
-            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-black" id="hero">
+            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-secondary" id="hero">
                 <BentoGrid />
 
                 <div className="w-1/3 text-textSecondary flex flex-col justify-center">

@@ -1,52 +1,66 @@
 [
     {
-        "name": "EcoStone Paver",
-        "model": "ESP-001",
-        "description": "Durable and eco-friendly paver made from recycled materials.",
+        "name": "Zigzag Paver",
+        "model": "ZP-001",
+        "description": "Interlocking zigzag paver known for its strength and durability.",
         "images": [
-            "https://placehold.co/600x400/2E8B57/FFFFFF/png?text=EcoStone+Paver+1",
-            "https://placehold.co/600x400/3CB371/000000/png?text=EcoStone+Paver+2",
-            "https://placehold.co/600x400/228B22/FFFFFF/png?text=EcoStone+Paver+3"
+            "/products/zigzag.jpg"
         ]
     },
     {
-        "name": "Classic Brick",
-        "model": "CB-002",
-        "description": "Traditional brick paver with a timeless look.",
+        "name": "Dummy Paver",
+        "model": "DP-002",
+        "description": "Rectangular paver with a smooth finish, ideal for pathways and patios.",
         "images": [
-            "https://placehold.co/600x400/8B0000/FFFFFF/png?text=Classic+Brick+1",
-            "https://placehold.co/600x400/B22222/000000/png?text=Classic+Brick+2",
-            "https://placehold.co/600x400/A52A2A/FFFFFF/png?text=Classic+Brick+3"
+            "/products/dummy.jpg"
         ]
     },
     {
-        "name": "Granite Slab",
-        "model": "GS-003",
-        "description": "Premium granite slab for a luxurious finish.",
+        "name": "Earth Stone",
+        "model": "ES-003",
+        "description": "Natural earth-toned stone paver for a rustic outdoor appeal.",
         "images": [
-            "https://placehold.co/600x400/696969/FFFFFF/png?text=Granite+Slab+1",
-            "https://placehold.co/600x400/A9A9A9/000000/png?text=Granite+Slab+2",
-            "https://placehold.co/600x400/808080/FFFFFF/png?text=Granite+Slab+3"
+            "/products/earth.jpg"
         ]
     },
     {
-        "name": "Modern Concrete",
-        "model": "MC-004",
-        "description": "Sleek and modern concrete paver for contemporary designs.",
+        "name": "Line Grass Paver",
+        "model": "LGP-004",
+        "description": "Innovative grass paver allowing for greenery integration in driveways.",
         "images": [
-            "https://placehold.co/600x400/708090/FFFFFF/png?text=Modern+Concrete+1",
-            "https://placehold.co/600x400/778899/000000/png?text=Modern+Concrete+2",
-            "https://placehold.co/600x400/2F4F4F/FFFFFF/png?text=Modern+Concrete+3"
+            "/products/linegrasspaver.jpg"
         ]
     },
     {
-        "name": "Rustic Cobblestone",
-        "model": "RC-005",
-        "description": "Charming cobblestone paver with a rustic appeal.",
+        "name": "Cobblestone",
+        "model": "CS-005",
+        "description": "Classic cobblestone paver for traditional and elegant designs.",
         "images": [
-            "https://placehold.co/600x400/DAA520/FFFFFF/png?text=Rustic+Cobblestone+1",
-            "https://placehold.co/600x400/8B4513/000000/png?text=Rustic+Cobblestone+2",
-            "https://placehold.co/600x400/CD853F/FFFFFF/png?text=Rustic+Cobblestone+3"
+            "/products/cobil.jpg"
+        ]
+    },
+    {
+        "name": "Line Paver",
+        "model": "LP-006",
+        "description": "Modern linear paver with a sleek and contemporary look.",
+        "images": [
+            "/products/line.jpg"
+        ]
+    },
+    {
+        "name": "NeverFade Paver",
+        "model": "NFP-007",
+        "description": "UV-resistant paver designed to maintain color vibrancy over time.",
+        "images": [
+            "/products/never.jpg"
+        ]
+    },
+    {
+        "name": "Bedrock Paver",
+        "model": "BP-008",
+        "description": "Compact and strong bedrock paver ideal for heavy-load areas.",
+        "images": [
+            "/products/bedrock.jpg"
         ]
     }
 ]

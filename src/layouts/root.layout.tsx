@@ -24,7 +24,7 @@ export const RootLayout: FC = () => {
                 shouldHideOnScroll
                 disableScrollHandler
                 classNames={{
-                    base: ["h-20",],
+                    base: ["h-20","bg-primary"],
                 }}
             >
                 <NavbarBrand className="">
