@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 :root {
-    --primary: 58 125 68;    /* #3A7D44 */
-    --secondary: 109 163 77; /* #6DA34D */
-    --accent: 168 224 99;     /* #A8E063 */
-    --background: 245 247 242; /* #F5F7F2 */
-    --text-primary: 16 16 16; /* #101010 */
-    --text-secondary: 78 82 80; /* #4e5250 */
+    --background-warm: 248 250 245;  /* #F8FAF5 - A warm off-white for a softer feel */
+    --primary: 245 247 242;   /* #F5F7F2 - Soft off-white with a subtle greenish tint */
+    --secondary: 250 252 248; /* #FAFCF8 - A slightly brighter white for contrast */
+    --accent: 100 170 80;      /* #64AA50 - Vibrant green for highlights and CTA buttons */
+    --text-primary: 30 110 50; /* #1E6E32 - Strong green for main text */
+    --text-secondary: 60 140 75; /* #3C8C4B - Softer but still fully green for secondary text */
+    --border: 180 210 190;      /* #B4D2BE - Smooth, subtle green borders */
 }
+
 
 html{
     scroll-behavior: smooth;

@@ -39,16 +39,16 @@ const fakeCateggories = ["category 1", "category 2", "category 3"];
 
 export const HomePage = () => {
     return (
-        <div className="bg-accent">
+        <div className="bg-background">
             {/* hero section */}
-            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-secondary" id="hero">
+            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-background" id="hero">
                 <BentoGrid />
 
-                <div className="w-1/3 text-textSecondary flex flex-col justify-center">
-                    <h2 className="text-white text-3xl font-semibold">
+                <div className="w-1/3 text-primary flex flex-col justify-center">
+                    <h2 className="text-textPrimary text-3xl font-semibold">
                         Elevate Your Outdoors with Timeless Paving & Kerbs
                     </h2>
-                    <p className="text-white text-lg mt-4">
+                    <p className="text-textPrimary text-lg mt-4">
                         Enhance your spaces with premium <span className="font-medium">tiles, paving, and kerbs</span> designed for durability and style. Whether for driveways, patios, or walkways, our expert-crafted solutions bring elegance and strength to every project. <span className="font-medium">Quality that lasts, beauty that stands out.</span>
                     </p>
 
@@ -68,7 +68,7 @@ export const HomePage = () => {
 
 
             {/* products section */}
-            <section id="products" className="flex flex-col">
+            <section id="products" className="flex flex-col bg-primary">
                 {
                     fakeCateggories.map(category => (
                         <div key={category} className="px-6 py-4 w-2/3 mx-auto ">

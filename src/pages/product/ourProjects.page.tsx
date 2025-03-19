@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
-import projectsData from "../../../ourprojects.json";
+import projectsData from '../../../_ourprojects.json'
 
 interface Project {
-  image_filename: string;
+  image_filenames: string[];
   product_name: string;
   project_description: string;
 }
-
-console.log("projectData", projectsData);
 
 export const OurProjects = () => {
   return (
@@ -27,8 +25,8 @@ export const OurProjects = () => {
           </p>
         </motion.div>
 
-        {/* Projects Section (Alternating Layout) */}
-        {projectsData && projectsData.length > 0 ? (
+        {/* Projects Section */}
+        {projectsData.length > 0 ? (
           <div className="grid grid-cols-1 gap-12">
             {projectsData.map((project: Project, index: number) => (
               <div
@@ -41,18 +39,27 @@ export const OurProjects = () => {
                   initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className="w-full md:w-1/2"
                 >
-                  <img
-                    src={project.image_filename}
-                    alt={project.product_name}
-                    className="rounded-lg shadow-md w-80 h-80 object-cover"
-                  />
+                  {/* Grid Image Layout */}
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                    {project.image_filenames.map((image, imgIndex) => (
+                      <img
+                        key={imgIndex}
+                        src={image}
+                        alt={project.product_name}
+                        className="rounded-lg shadow-md object-cover w-full h-40"
+                      />
+                    ))}
+                  </div>
                 </motion.div>
+
+                {/* Project Details */}
                 <motion.div
                   initial={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8, delay: index * 0.2 }}
-                  className="space-y-4 text-center md:text-left"
+                  className="space-y-4 text-center md:text-left w-full md:w-1/2"
                 >
                   <h1 className="text-xl font-bold text-blue-600">{project.product_name}</h1>
                   <p className="text-gray-600 font-serif">{project.project_description}</p>

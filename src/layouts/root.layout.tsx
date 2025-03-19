@@ -5,6 +5,7 @@ import { Outlet } from "react-router"
 import { Button } from "@heroui/button"
 import { WhatsappIcon } from "../assets/whatsapp-icon"
 import { Footer } from "../components/Footer"
+import { useNavigate } from "react-router"
 
 const navItems: { nav: string }[] = [
     { nav: "home" },
@@ -13,7 +14,7 @@ const navItems: { nav: string }[] = [
 ]
 
 export const RootLayout: FC = () => {
-
+    const navigate = useNavigate()
     return (
         <div className="">
 
@@ -35,10 +36,12 @@ export const RootLayout: FC = () => {
                     {
                         navItems.map(item => <NavbarItem key={item.nav}>{item.nav}</NavbarItem>)
                     }
+                    
                     <Button
                         className="bg-green-400/50 items-center"
                         startContent={<WhatsappIcon />}
                         size="sm"
+                        onClick={() => navigate('/ourProjects')}
                     >
                         Enquire
                     </Button>

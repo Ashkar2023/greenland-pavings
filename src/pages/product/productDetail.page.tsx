@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { EmblaCarousel } from "../../components/EmblaCarousel";
-import productsData from '../../../products.json'
+import productsData from '../../../_products.json'
 
 interface Product {
   name: string;
@@ -20,10 +20,10 @@ export const ProductDetailPage = () => {
 
   return (
     <div className="h-screen bg-white p-4">
-      <div className="grid grid-flow-row md:grid-cols-[1fr_1fr] min-h-full gap-4">
+      <div className="grid grid-flow-row md:grid-cols-[1fr_1fr] max-h-[800px] gap-4">
         {/* Left Side: Embla Carousel */}
         <div className=" h-full w-full  flex justify-center items-center">
-          <div className="w-full h-full">
+          <div className="w-full max-h-full ">
             <EmblaCarousel images={product.images} />
           </div>
         </div>
