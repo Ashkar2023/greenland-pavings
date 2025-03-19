@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-    --primary: 31 97 100;
+    --primary: 31 118 100;
     --secondary: 23 84 90;
     --accent: 94 199 142;
-    --light: 231 240 242;
+    --light: 210 225 230;
     --text-primary: 16 16 16; /* #101010 */
     --text-secondary: 78 82 80; /* #4e5250 */
 }
@@ -33,6 +33,6 @@ html{
 
 /* Scrollbar thumb (the draggable part) */
 .slim-scrollbar::-webkit-scrollbar-thumb {
-    background-app: rgb(var(--accent)); /* Thumb color */
+    background-color: rgb(var(--accent)); /* Thumb color */
     border-radius: 20px; /* Rounded thumb */
 }

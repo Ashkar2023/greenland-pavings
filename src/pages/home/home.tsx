@@ -1,46 +1,17 @@
 import { BentoGrid } from "../../components/bentoGrid";
 import { ProductCardsSlider } from "../../components/productCardsSlider";
-import productsDetails from "../../../_products.json";
-
-// const fakeProducts = [
-//     {
-//         name: "Product 1",
-//         model: "Model A",
-//         description: "Description for product 1"
-//     },
-//     {
-//         name: "Product 2",
-//         model: "Model B",
-//         description: "Description for product 2"
-//     },
-//     {
-//         name: "Product 3",
-//         model: "Model C",
-//         description: "Description for product 3"
-//     },
-//     {
-//         name: "Product 4",
-//         model: "Model D",
-//         description: "Description for product 4"
-//     },
-//     {
-//         name: "Product 4",
-//         model: "Model D",
-//         description: "Description for product 4"
-//     },
-//     {
-//         name: "Product 4",
-//         model: "Model D",
-//         description: "Description for product 4"
-//     },
-// ]
-// const fakeCateggories = ["category 1", "category 2", "category 3"];
+import productsDetails from "../../../products.json";
+import { ChevronsRight } from "lucide-react";
+import { useNavigate } from "react-router";
+import { Button } from "@heroui/button";
 
 export const HomePage = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="bg-app-light">
             {/* hero section */}
-            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-app-primary rounded-[0px_0%_30%_0px_/_0px_0%_30%_0px]" id="hero">
+            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-app-primary rounded-[0px_0%_20%_0px_/_0px_0%_30%_0px]" id="hero">
                 <BentoGrid />
 
                 <div className="w-1/3 text-white flex flex-col justify-center">
@@ -67,19 +38,24 @@ export const HomePage = () => {
 
 
             {/* products section */}
-            <section id="products" className="">
-                {
-                    // productsDetails.map(product => (
-                    //     <div key={product.model} className="px-6 py-4 w-2/3 mx-auto ">
-                    //         <h1 className="text-4xl font-medium">
-                    //             {category}
-                    //         </h1>
-                    //         <ProductCardsSlider products={productsDetails} />
-                    //     </div>
-                    // ))
-                }
+            <section id="products" className="w-full flex justify-center">
                 <ProductCardsSlider products={productsDetails} />
             </section>
+
+
+            <div className="flex">
+                <div className="w-full flex justify-center ">
+                    <Button
+                        className="mt-2 px-24 bg-white mb-8"
+                        onPress={() => navigate(`/products`)}
+                    >
+                        <h1 className="">View more</h1>
+                        <ChevronsRight className="group-hover:translate-x-2 transition-transform" />
+                    </Button>
+                </div>
+            </div>
+
+
 
         </div>
     )
