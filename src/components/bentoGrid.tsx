@@ -11,7 +11,7 @@ export const BentoGrid = () => {
 
     return (
         <div className="w-1/2 h-full">
-            <div className="size-full grid *:rounded *:overflow-hidden grid-cols-5 grid-rows-3 gap-2" id="grid-container">
+            <div className="size-full grid *:rounded *:border-2 *:overflow-hidden grid-cols-5 grid-rows-3 gap-3" id="grid-container">
 
                 <div className="col-span-3 bg-slate-500">
                     <EmblaCarousel images={gridImages[0]} pauseVisible={false} scrollHandlesVisible={false} delay={5100} />

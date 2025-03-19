@@ -88,8 +88,8 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Logo Positioned at the Right */}
-          <div className="flex justify-end items-start">
-            <img src={AppLogo} alt="Nike Logo" className="w-28 h-20 object-contain" />
+          <div className="flex md:justify-end items-start">
+            <img src={AppLogo} alt="Nike Logo" className="max-w-44 md:max-w-full object-contain" />
           </div>
         </div>
 

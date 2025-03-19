@@ -1,18 +1,18 @@
 [
     {
-        "name": "Zigzag Paver",
-        "model": "ZP-001",
-        "description": "Interlocking zigzag paver known for its strength and durability.",
+        "name": "Bedrock Paver",
+        "model": "BP-008",
+        "description": "Compact and strong bedrock paver ideal for heavy-load areas.",
         "images": [
-            "/products/zigzag.jpg"
+            "/products/bedrock.png"
         ]
     },
     {
-        "name": "Dummy Paver",
-        "model": "DP-002",
-        "description": "Rectangular paver with a smooth finish, ideal for pathways and patios.",
+        "name": "Never Fade Paver",
+        "model": "NFP-007",
+        "description": "UV-resistant paver designed to maintain color vibrancy over time.",
         "images": [
-            "/products/dummy.jpg"
+            "/products/never.png"
         ]
     },
     {
@@ -20,7 +20,23 @@
         "model": "ES-003",
         "description": "Natural earth-toned stone paver for a rustic outdoor appeal.",
         "images": [
-            "/products/earth.jpg"
+            "/products/earth.png"
+        ]
+    },
+    {
+        "name": "Zig-Zag Paver",
+        "model": "ZP-001",
+        "description": "Interlocking zigzag paver known for its strength and durability.",
+        "images": [
+            "/products/zigzag.png"
+        ]
+    },
+    {
+        "name": "Dummy Paver",
+        "model": "DP-002",
+        "description": "Rectangular paver with a smooth finish, ideal for pathways and patios.",
+        "images": [
+            "/products/dummy.png"
         ]
     },
     {
@@ -28,7 +44,7 @@
         "model": "LGP-004",
         "description": "Innovative grass paver allowing for greenery integration in driveways.",
         "images": [
-            "/products/linegrasspaver.jpg"
+            "/products/linegrasspaver.png"
         ]
     },
     {
@@ -36,7 +52,7 @@
         "model": "CS-005",
         "description": "Classic cobblestone paver for traditional and elegant designs.",
         "images": [
-            "/products/cobil.jpg"
+            "/products/cobil.png"
         ]
     },
     {
@@ -44,23 +60,8 @@
         "model": "LP-006",
         "description": "Modern linear paver with a sleek and contemporary look.",
         "images": [
-            "/products/line.jpg"
-        ]
-    },
-    {
-        "name": "NeverFade Paver",
-        "model": "NFP-007",
-        "description": "UV-resistant paver designed to maintain color vibrancy over time.",
-        "images": [
-            "/products/never.jpg"
-        ]
-    },
-    {
-        "name": "Bedrock Paver",
-        "model": "BP-008",
-        "description": "Compact and strong bedrock paver ideal for heavy-load areas.",
-        "images": [
-            "/products/bedrock.jpg"
+            "/products/line.png"
         ]
     }
+   
 ]

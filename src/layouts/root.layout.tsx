@@ -1,7 +1,7 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@heroui/navbar"
-import { FC } from "react"
+import { FC, useEffect } from "react"
 import AppLogo from "../assets/logo.jpg"
-import { Outlet } from "react-router"
+import { Outlet, useLocation } from "react-router"
 import { Button } from "@heroui/button"
 import { WhatsappIcon } from "../assets/whatsapp-icon"
 import { Footer } from "../components/Footer"
@@ -13,6 +13,11 @@ const navItems: { nav: string }[] = [
 ]
 
 export const RootLayout: FC = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "instant" })
+    }, [pathname]);
 
     return (
         <div className="">
@@ -24,7 +29,7 @@ export const RootLayout: FC = () => {
                 shouldHideOnScroll
                 disableScrollHandler
                 classNames={{
-                    base: ["h-16","bg-white","text-black"],
+                    base: ["h-16", "bg-white", "text-black","border-b"],
                 }}
             >
                 <NavbarBrand className="">
