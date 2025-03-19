@@ -12,7 +12,8 @@ interface Product {
 export const ProductDetailPage = () => {
   const { model } = useParams<{ model: string }>();
   const products: Product[] = productsData;
-  const product = products.find((p) => p.model.toLowerCase() === model);
+  const product = products.find((p) => p.model === model);
+  console.log("model and product model", model , '-', product)
 
   if (!product) {
     return <div className="text-center text-red-500">Product not found</div>;

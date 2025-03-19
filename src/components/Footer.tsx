@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-secondary text-textSecondary py-12 px-4">
+    <footer className="bg-white text-textSecondary py-12 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
           {/* Quick Links */}

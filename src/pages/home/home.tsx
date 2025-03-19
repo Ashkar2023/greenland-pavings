@@ -1,6 +1,6 @@
 import { BentoGrid } from "../../components/bentoGrid";
 import { ProductCardsSlider } from "../../components/productCardsSlider";
-import productsDetails from "../../../products.json";
+import productsDetails from "../../../_products.json";
 
 // const fakeProducts = [
 //     {
@@ -43,7 +43,7 @@ export const HomePage = () => {
             <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-app-primary rounded-[0px_0%_30%_0px_/_0px_0%_30%_0px]" id="hero">
                 <BentoGrid />
 
-                <div className="w-1/3 text-primary flex flex-col justify-center">
+                <div className="w-1/3 text-white flex flex-col justify-center">
                     <h2 className="text-textPrimary text-3xl font-semibold">
                         Elevate Your Outdoors with Timeless Paving & Kerbs
                     </h2>
