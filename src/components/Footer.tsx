@@ -1,7 +1,7 @@
 import { InstagramIcon } from "../assets/instagram-icon";
 import { FbIcon } from "../assets/fb-icon";
 import { TwitterIcon } from "../assets/twiiter-icon";
-import logo from '../assets/nike.svg'
+import AppLogo from '../assets/logo.jpg'
 import { motion } from "framer-motion";
 
 export const Footer: React.FC = () => {
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
 
           {/* Logo Positioned at the Right */}
           <div className="flex justify-end items-start">
-            <img src={logo} alt="Nike Logo" className="w-28 h-20 object-contain" />
+            <img src={AppLogo} alt="Nike Logo" className="w-28 h-20 object-contain" />
           </div>
         </div>
 

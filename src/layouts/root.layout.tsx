@@ -1,6 +1,6 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle } from "@heroui/navbar"
 import { FC } from "react"
-import NikeLogo from "../assets/nike.svg"
+import AppLogo from "../assets/logo.jpg"
 import { Outlet } from "react-router"
 import { Button } from "@heroui/button"
 import { WhatsappIcon } from "../assets/whatsapp-icon"
@@ -25,11 +25,11 @@ export const RootLayout: FC = () => {
                 shouldHideOnScroll
                 disableScrollHandler
                 classNames={{
-                    base: ["h-20","bg-primary"],
+                    base: ["h-16","bg-white","text-black"],
                 }}
             >
                 <NavbarBrand className="">
-                    <img src={NikeLogo} alt="" className="md:max-h-16 max-h-10" />
+                    <img src={AppLogo} alt="" className="md:max-h-16 max-h-10" />
                     <h1 className="md:text-2xl text-base font-medium">Greenland paving</h1>
                 </NavbarBrand>
                 <NavbarContent className="text-sm hidden sm:flex" justify="end" >
@@ -38,7 +38,7 @@ export const RootLayout: FC = () => {
                     }
                     
                     <Button
-                        className="bg-green-400/50 items-center"
+                        className="bg-app-accent text-white items-center"
                         startContent={<WhatsappIcon />}
                         size="sm"
                         onClick={() => navigate('/ourProjects')}

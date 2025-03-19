@@ -3,13 +3,12 @@
 @tailwind utilities;
 
 :root {
-    --background-warm: 248 250 245;  /* #F8FAF5 - A warm off-white for a softer feel */
-    --primary: 245 247 242;   /* #F5F7F2 - Soft off-white with a subtle greenish tint */
-    --secondary: 250 252 248; /* #FAFCF8 - A slightly brighter white for contrast */
-    --accent: 100 170 80;      /* #64AA50 - Vibrant green for highlights and CTA buttons */
-    --text-primary: 30 110 50; /* #1E6E32 - Strong green for main text */
-    --text-secondary: 60 140 75; /* #3C8C4B - Softer but still fully green for secondary text */
-    --border: 180 210 190;      /* #B4D2BE - Smooth, subtle green borders */
+    --primary: 31 97 100;
+    --secondary: 23 84 90;
+    --accent: 94 199 142;
+    --light: 231 240 242;
+    --text-primary: 16 16 16; /* #101010 */
+    --text-secondary: 78 82 80; /* #4e5250 */
 }
 
 
@@ -34,6 +33,6 @@ html{
 
 /* Scrollbar thumb (the draggable part) */
 .slim-scrollbar::-webkit-scrollbar-thumb {
-    background-color: rgb(var(--accent)); /* Thumb color */
+    background-app: rgb(var(--accent)); /* Thumb color */
     border-radius: 20px; /* Rounded thumb */
 }
