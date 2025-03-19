@@ -1,47 +1,46 @@
-import { Button } from "@heroui/button";
 import { BentoGrid } from "../../components/bentoGrid";
 import { ProductCardsSlider } from "../../components/productCardsSlider";
-import { Search } from "lucide-react";
+import productsDetails from "../../../products.json";
 
-const fakeProducts = [
-    {
-        name: "Product 1",
-        model: "Model A",
-        description: "Description for product 1"
-    },
-    {
-        name: "Product 2",
-        model: "Model B",
-        description: "Description for product 2"
-    },
-    {
-        name: "Product 3",
-        model: "Model C",
-        description: "Description for product 3"
-    },
-    {
-        name: "Product 4",
-        model: "Model D",
-        description: "Description for product 4"
-    },
-    {
-        name: "Product 4",
-        model: "Model D",
-        description: "Description for product 4"
-    },
-    {
-        name: "Product 4",
-        model: "Model D",
-        description: "Description for product 4"
-    },
-]
-const fakeCateggories = ["category 1", "category 2", "category 3"];
+// const fakeProducts = [
+//     {
+//         name: "Product 1",
+//         model: "Model A",
+//         description: "Description for product 1"
+//     },
+//     {
+//         name: "Product 2",
+//         model: "Model B",
+//         description: "Description for product 2"
+//     },
+//     {
+//         name: "Product 3",
+//         model: "Model C",
+//         description: "Description for product 3"
+//     },
+//     {
+//         name: "Product 4",
+//         model: "Model D",
+//         description: "Description for product 4"
+//     },
+//     {
+//         name: "Product 4",
+//         model: "Model D",
+//         description: "Description for product 4"
+//     },
+//     {
+//         name: "Product 4",
+//         model: "Model D",
+//         description: "Description for product 4"
+//     },
+// ]
+// const fakeCateggories = ["category 1", "category 2", "category 3"];
 
 export const HomePage = () => {
     return (
-        <div className="bg-accent">
+        <div className="bg-app-light">
             {/* hero section */}
-            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-secondary" id="hero">
+            <div className="lg:h-[600px] px-4 py-8 flex justify-evenly bg-app-primary rounded-[0px_0%_30%_0px_/_0px_0%_30%_0px]" id="hero">
                 <BentoGrid />
 
                 <div className="w-1/3 text-textSecondary flex flex-col justify-center">
@@ -52,13 +51,13 @@ export const HomePage = () => {
                         Enhance your spaces with premium <span className="font-medium">tiles, paving, and kerbs</span> designed for durability and style. Whether for driveways, patios, or walkways, our expert-crafted solutions bring elegance and strength to every project. <span className="font-medium">Quality that lasts, beauty that stands out.</span>
                     </p>
 
-                    <Button
+                    {/* <Button
                         startContent={<Search strokeWidth={"1px"}/>}
                         radius="sm"
                         className="mt-8 font-medium"
                         >
                         Browse products
-                    </Button>
+                    </Button> */}
                 </div>
             </div>
 
@@ -68,17 +67,18 @@ export const HomePage = () => {
 
 
             {/* products section */}
-            <section id="products" className="flex flex-col">
+            <section id="products" className="">
                 {
-                    fakeCateggories.map(category => (
-                        <div key={category} className="px-6 py-4 w-2/3 mx-auto ">
-                            <h1 className="text-4xl font-medium">
-                                {category}
-                            </h1>
-                            <ProductCardsSlider products={fakeProducts} />
-                        </div>
-                    ))
+                    // productsDetails.map(product => (
+                    //     <div key={product.model} className="px-6 py-4 w-2/3 mx-auto ">
+                    //         <h1 className="text-4xl font-medium">
+                    //             {category}
+                    //         </h1>
+                    //         <ProductCardsSlider products={productsDetails} />
+                    //     </div>
+                    // ))
                 }
+                <ProductCardsSlider products={productsDetails} />
             </section>
 
         </div>
