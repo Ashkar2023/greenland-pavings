@@ -7,15 +7,16 @@ import { WhatsappIcon } from "../assets/whatsapp-icon"
 import { Footer } from "../components/Footer"
 import { useNavigate } from "react-router"
 
-const navItems: { nav: string }[] = [
-    { nav: "home" },
-    { nav: "products" },
-    { nav: "about us" },
+const navItems: { nav: string, path: string }[] = [
+    { nav: "home", path: "/" },
+    { nav: "products", path: "/products" },
+    { nav: "about", path: "/about" },
+    { nav: "projects", path: "/ourProjects" },
 ]
 
 export const RootLayout: FC = () => {
     const { pathname } = useLocation();
-
+    const navigate = useNavigate()
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "instant" })
     }, [pathname]);
@@ -30,23 +31,24 @@ export const RootLayout: FC = () => {
                 shouldHideOnScroll
                 disableScrollHandler
                 classNames={{
-                    base: ["h-16", "bg-white", "text-black","border-b"],
+                    base: ["h-16", "bg-white", "text-black", "border-b"],
                 }}
             >
                 <NavbarBrand className="">
                     <img src={AppLogo} alt="" className="md:max-h-16 max-h-10" />
                     <h1 className="md:text-2xl text-base font-medium">Greenland paving</h1>
                 </NavbarBrand>
-                <NavbarContent className="text-sm hidden sm:flex" justify="end" >
-                    {
-                        navItems.map(item => <NavbarItem key={item.nav}>{item.nav}</NavbarItem>)
-                    }
-                    
+                <NavbarContent className="text-sm  hidden sm:flex" justify="end" >
+                {navItems.map(item => (
+                        <NavbarMenuItem key={item.path} onClick={() => navigate(item.path)} className="cursor-pointer text-sm md:text-base lg:text-lg">
+                            {item.nav}
+                        </NavbarMenuItem>
+                    ))}
                     <Button
                         className="bg-app-accent text-white items-center"
                         startContent={<WhatsappIcon />}
                         size="sm"
-                        onClick={() => navigate('/ourProjects')}
+                        onClick={() => window.open('https://wa.me/9539524752', '_blank')}
                     >
                         Enquire
                     </Button>
@@ -55,9 +57,11 @@ export const RootLayout: FC = () => {
                 <NavbarMenuToggle className="sm:hidden flex" />
 
                 <NavbarMenu className="text-end ">
-                    {
-                        navItems.map(item => <NavbarMenuItem key={item.nav}>{item.nav}</NavbarMenuItem>)
-                    }
+                    {navItems.map(item => (
+                        <NavbarMenuItem key={item.path} onClick={() => navigate(item.path)} className="cursor-pointer">
+                            {item.nav}
+                        </NavbarMenuItem>
+                    ))}
                 </NavbarMenu>
             </Navbar>
 

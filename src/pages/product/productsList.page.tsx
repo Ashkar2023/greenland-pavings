@@ -25,9 +25,10 @@ export const ProductsListPage = () => {
                         key={product.model}
                         shadow="sm"
                         radius="sm"
-                        onClick={() => navigate(`/product/${product.model}`)}
                     >
-                        <CardBody className="p-0 h-[350px] relative overflow-hidden">
+                        <CardBody className="p-0 h-[350px] relative overflow-hidden" 
+                        onClick={() => navigate(`/product/${product.model.toLowerCase()}`)}
+                        >
                             <Image
                                 alt="Card background"
                                 className="rounded-md w-full h-full object-cover transition-transform duration-300 hover:scale-105"
@@ -62,9 +63,10 @@ export const ProductsListPage = () => {
                         key={product.model}
                         shadow="sm"
                         radius="sm"
-                        onClick={() => navigate(`/product/${product.model}`)}
-                    >
-                        <CardBody className="p-0 h-[350px] relative overflow-hidden">
+                        >
+                        <CardBody className="p-0 h-[350px] relative overflow-hidden" 
+                        onClick={() => navigate(`/product/${product.model.toLowerCase()}`)}
+                        >
                             <Image
                                 alt="Card background"
                                 className="rounded-md w-full h-full object-cover transition-transform duration-300 hover:scale-105"

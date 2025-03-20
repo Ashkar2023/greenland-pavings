@@ -1,6 +1,6 @@
 import { BentoGrid } from "../../components/bentoGrid";
 import { ProductCardsSlider } from "../../components/productCardsSlider";
-import productsDetails from "../../../products.json";
+import productsDetails from "../../../_products.json";
 import { ChevronsRight } from "lucide-react";
 import { useNavigate } from "react-router";
 import { Button } from "@heroui/button";
