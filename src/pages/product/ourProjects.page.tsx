@@ -9,7 +9,7 @@ interface Project {
 
 export const OurProjects = () => {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-app-light min-h-screen">
       <div className="max-w-7xl mx-auto px-6 py-12 space-y-12">
         {/* Header Section */}
         <motion.div
@@ -17,10 +17,10 @@ export const OurProjects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="text-center mb-6 text-2xl font-semibold text-blue-700">
+          <div className="text-center mb-6 text-2xl font-semibold text-app-accent">
             Our Projects
           </div>
-          <p className="text-lg text-gray-700 font-serif text-center">
+          <p className="text-lg text-gray-700 text-center">
             Explore our latest innovative projects that bring technology and convenience to everyday life.
           </p>
         </motion.div>
@@ -61,8 +61,8 @@ export const OurProjects = () => {
                   transition={{ duration: 0.8, delay: index * 0.2 }}
                   className="space-y-4 text-center md:text-left w-full md:w-1/2"
                 >
-                  <h1 className="text-xl font-bold text-blue-600">{project.product_name}</h1>
-                  <p className="text-gray-600 font-serif">{project.project_description}</p>
+                  <h1 className="text-xl font-bold text-app-accent">{project.product_name}</h1>
+                  <p className="text-gray-600">{project.project_description}</p>
                 </motion.div>
               </div>
             ))}

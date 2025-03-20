@@ -1,6 +1,5 @@
 import { Card, CardBody, CardFooter } from "@heroui/card"
 import { Image } from "@heroui/image"
-import { ChevronsRight } from "lucide-react"
 import { FC } from "react"
 import { useNavigate } from "react-router"
 

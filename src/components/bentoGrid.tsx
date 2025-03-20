@@ -1,17 +1,18 @@
 import { EmblaCarousel } from "./EmblaCarousel"
 import gridImages from "../../gridImages.json"
+import { FC, HTMLProps } from "react"
 
 // const MAX_DELAY = 4500;
 // const MIN_DELAY = 2500;
 
 // const getRandomDelay = () => Math.floor(Math.random() * (MAX_DELAY - MIN_DELAY) + MIN_DELAY);
 
-export const BentoGrid = () => {
+export const BentoGrid : FC<HTMLProps<HTMLDivElement>> = () => {
 
 
     return (
-        <div className="w-1/2 h-full">
-            <div className="size-full grid *:rounded *:border-2 *:overflow-hidden grid-cols-5 grid-rows-3 gap-3" id="grid-container">
+        <div className="w-1/2 lg:h-full md:h-[60vh] hidden md:block">
+            <div className="size-full grid *:rounded *:overflow-hidden grid-cols-5 grid-rows-3 gap-3" id="grid-container">
 
                 <div className="col-span-3 bg-slate-500">
                     <EmblaCarousel images={gridImages[0]} pauseVisible={false} scrollHandlesVisible={false} delay={5100} />

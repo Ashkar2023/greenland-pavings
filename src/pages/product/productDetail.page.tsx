@@ -38,6 +38,7 @@ export const ProductDetailPage = () => {
                 </div>
             </div>
         </div>
+    ); 
     );
 
   
