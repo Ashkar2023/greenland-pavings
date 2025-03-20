@@ -15,6 +15,7 @@ const navItems: { nav: string }[] = [
 
 export const RootLayout: FC = () => {
     const { pathname } = useLocation();
+    const navigate = useNavigate()
 
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "instant" })
@@ -46,7 +47,7 @@ export const RootLayout: FC = () => {
                         className="bg-app-accent text-white items-center"
                         startContent={<WhatsappIcon />}
                         size="sm"
-                        onClick={() => navigate('/ourProjects')}
+                        onPress={() => navigate('/ourProjects')}
                     >
                         Enquire
                     </Button>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --primary: 31 118 100;
+    --primary: 0 23 31;
     --secondary: 23 84 90;
     --accent: 94 199 142;
     --light: 210 225 230;
