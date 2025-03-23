@@ -4,6 +4,7 @@ import productsJson from "../../../_products.json";
 import { ChevronsRight } from "lucide-react";
 import { useNavigate } from "react-router";
 import { Button } from "@heroui/button";
+import ProjectCardsSlider from "../../components/projectCardsSlider";
 
 export const HomePage = () => {
     const navigate = useNavigate();
@@ -60,6 +61,10 @@ export const HomePage = () => {
                         <ChevronsRight className="group-hover:translate-x-2 transition-transform" />
                     </Button>
                 </div>
+            </div>
+
+            <div>
+                <ProjectCardsSlider />
             </div>
 
         </div>
