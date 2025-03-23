@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
             {/* lg:rounded-[25%_0%_0%_0%/60%_0%_0%_0%] md:rounded-[20%_0%_0%_0%/30%_0%_0%_0%] rounded-[15%_0%_0%_0%/10%_0%_0%_0%] */}
             <footer className="py-12 px-4  bg-white">
                 <div className="max-w-full mx-auto">
-                    <div className="ml-6 lg:ml-52 md:ml-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+                    <div className="md:mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
                         {/* Quick Links */}
                         <div>
                             <h3 className="text-xl font-semibold mb-4 text-textPrimary">Quick Links</h3>

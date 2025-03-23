@@ -24,7 +24,7 @@ export const ProductsListPage = () => {
             <div className="bg-accent w-full py-6 px-2 grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-2 lg:grid-cols-4">
                 {productData.slice(0, 4).map(product => (
                     <Card
-                        className="md:min-w-[270px] flex flex-col h-[450px] transition-all duration-300 border border-transparent hover:border-app-accent hover:shadow-lg cursor-pointer"
+                        className="md:min-w-[270px] pb-4 flex flex-col h-[450px] transition-all duration-300 border border-transparent hover:border-black hover:shadow-lg cursor-pointer"
                         key={product.model}
                         shadow="sm"
                         radius="sm"
@@ -34,7 +34,7 @@ export const ProductsListPage = () => {
                         >
                             <Image
                                 alt="Card background"
-                                className="rounded-md w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                                className="rounded-md w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                                 src={product.images[0]}
                                 height={300}
                                 width={400}
@@ -62,7 +62,7 @@ export const ProductsListPage = () => {
             <div className="bg-accent w-full py-6 px-2 grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-2 lg:grid-cols-4">
                 {productData.slice(4).map(product => (
                     <Card
-                        className="md:min-w-[270px] flex flex-col h-[450px] transition-all duration-300 border border-transparent hover:border-app-accent hover:shadow-lg cursor-pointer"
+                        className="md:min-w-[270px] pb-4 flex flex-col h-[450px] transition-all duration-300 border border-transparent hover:border-black hover:shadow-lg cursor-pointer"
                         key={product.model}
                         shadow="sm"
                         radius="sm"
@@ -72,7 +72,7 @@ export const ProductsListPage = () => {
                         >
                             <Image
                                 alt="Card background"
-                                className="rounded-md w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                                className="rounded-md w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                                 src={product.images[0]}
                                 height={300}
                                 width={400}
