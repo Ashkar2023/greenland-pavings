@@ -18,10 +18,10 @@ export const ProductDetailPage = () => {
     }
 
     return (
-        <div className="bg-gradient-to-r from-white to-app-light p-4">
+        <div className="bg-gradient-to-b md:bg-gradient-to-r from-white to-app-light p-4 md:h-screen h-fit">
             <div className="grid grid-flow-row md:grid-cols-[1fr_1fr] gap-4">
                 {/* Left Side: Embla Carousel */}
-                <div className="h-[600px]  flex justify-center items-center">
+                <div className="h-[500px] md:h-[600px]  flex justify-center items-center">
                     {/* <div className="w-full h-full"> */}
                         <img
                             src={product.images[0]}
@@ -39,8 +39,6 @@ export const ProductDetailPage = () => {
             </div>
         </div>
     ); 
-    );
-
   
   
 };

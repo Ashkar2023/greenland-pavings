@@ -9,19 +9,23 @@ type Props = {
         model: string,
         description: string,
         images: string[]
-    }[]
+    }[],
+    categoryName: string
 }
 
-export const ProductCardsSlider: FC<Props> = ({ products }) => {
+export const ProductCardsSlider: FC<Props> = ({ products, categoryName }) => {
     const navigate = useNavigate();
 
     return (
-        <>
-            <div className="slim-scrollbar gap-3 py-4 lg:mx-56 md:mx-24 grid md:grid-cols-[repeat(3,1fr)] sm:grid-cols-[repeat(2,1fr)]">
+        <div className="ml-3 md:ml-10 my-5">
+            <div className="mb-2" id="category-header">
+                <h2 className="border-b inline text-4xl">{categoryName}</h2>
+            </div>
+            <div className="slim-scrollbar pb-3 gap-3 flex flex-row overflow-x-scroll">
                 {
-                    products.slice(0, 6).map(product => (
+                    products.map(product => (
                         <Card
-                            className="cursor-pointer"
+                            className="cursor-pointer min-w-[180px] md:min-w-[250px]"
                             key={product.model}
                             shadow="sm" radius="sm"
                         >
@@ -44,6 +48,6 @@ export const ProductCardsSlider: FC<Props> = ({ products }) => {
                     ))
                 }
             </div>
-        </>
+        </div>
     )
 }
