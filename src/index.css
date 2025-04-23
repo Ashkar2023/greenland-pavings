@@ -38,10 +38,14 @@ html{
 }
 
 .projects-animate{
-    animation: slideLeft 20s infinite linear;
+    animation: slide-left 20s infinite linear;
+    
+    &:hover{
+        animation-play-state: paused;
+    }
 }
 
-@keyframes slideLeft{
+@keyframes slide-left{
     from{
         transform: translateX(0%);
     }

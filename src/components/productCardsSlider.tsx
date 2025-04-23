@@ -1,5 +1,6 @@
 import { Card, CardBody, CardFooter } from "@heroui/card"
 import { Image } from "@heroui/image"
+import { LucideArrowUpRight, LucideEye } from "lucide-react"
 import { FC } from "react"
 import { useNavigate } from "react-router"
 
@@ -25,7 +26,7 @@ export const ProductCardsSlider: FC<Props> = ({ products, categoryName }) => {
                 {
                     products.map(product => (
                         <Card
-                            className="cursor-pointer min-w-[180px] md:min-w-[250px]"
+                            className="cursor-pointer min-w-[180px] md:min-w-[250px] relative group bg-white"
                             key={product.model}
                             shadow="sm" radius="sm"
                         >
@@ -38,12 +39,21 @@ export const ProductCardsSlider: FC<Props> = ({ products, categoryName }) => {
                                     src={product.images[0]}
                                     width={270}
                                 />
+
                             </CardBody>
-                            <CardFooter className="block max-w-[300px] leading-none">
+                            <CardFooter className="block max-w-[300px] leading-none bg-inherit z-20">
                                 <h4 className="font-bold text-large text-app-accent">{product.name}</h4>
                                 <p className="text-tiny uppercase font-bold">{product.model}</p>
                                 <small className="text-default-500">{product.description}</small>
                             </CardFooter>
+
+                            <button
+                                className="click-view-btn absolute w-1/3 p-1 items-center justify-center hidden gap-2 bg-gray-100 z-10 shadow-lg rounded-xl group-hover:flex"
+                                onClick={() => navigate(`/product/${product.model.toLowerCase()}`)}
+                            >
+                                view
+                                <LucideArrowUpRight size={15}/>
+                            </button>
                         </Card>
                     ))
                 }
