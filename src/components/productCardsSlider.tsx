@@ -1,6 +1,6 @@
 import { Card, CardBody, CardFooter } from "@heroui/card"
 import { Image } from "@heroui/image"
-import { LucideArrowUpRight, LucideEye } from "lucide-react"
+import { LucideArrowUpRight } from "lucide-react"
 import { FC } from "react"
 import { useNavigate } from "react-router"
 
