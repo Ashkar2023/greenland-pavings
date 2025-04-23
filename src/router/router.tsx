@@ -4,7 +4,6 @@ import { HomePage } from "../pages/home/home";
 import { ProductsListPage } from "../pages/product/productsList.page";
 import { ProductDetailPage } from "../pages/product/productDetail.page";
 import { About } from "../pages/about/about";
-import { OurProjects } from "../pages/product/ourProjects.page";
 
 export const appRouter = createBrowserRouter([
     {
@@ -27,10 +26,6 @@ export const appRouter = createBrowserRouter([
                 path: "/about",
                 element: <About />
             },
-            {
-                path: "/ourProjects",
-                element: <OurProjects />
-            }
         ]
     },
     {

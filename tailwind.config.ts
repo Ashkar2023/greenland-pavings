@@ -10,7 +10,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                "sans": ["Jura", "sans-serif"]
+                "sans": ["Jura","sans-serif"]
             },
             backgroundImage: {
                 test: "url('https://plus.unsplash.com/premium_photo-1681400232080-d344759e6609?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGF0dGVybnxlbnwwfHwwfHx8MA%3D%3D')"
@@ -24,10 +24,9 @@ export default {
                 "app-text-secondary": "rgb(var(--text-secondary) / <alpha-value>)",
             },
             screens: {
-                "mobile": "425px"
+                "m": "425px"
             }
         },
     },
     plugins: [heroui()],
 } satisfies Config
-

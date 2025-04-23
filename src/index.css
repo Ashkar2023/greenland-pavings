@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 :root {
-    --primary: 0 23 31;
-    /* --primary: 97 150 168; */
+    /* --primary: 0 23 31; */
+    --light: 208 250 229;
     --secondary: 23 84 90;
     --accent: 94 199 142;
-    --light: 210 225 230;
     --text-primary: 16 16 16; /* #101010 */
     --text-secondary: 78 82 80; /* #4e5250 */
 }
@@ -36,4 +35,17 @@ html{
 .slim-scrollbar::-webkit-scrollbar-thumb {
     background-color: #91a5a663; /* Thumb color */
     border-radius: 20px; /* Rounded thumb */
+}
+
+.projects-animate{
+    animation: slideLeft 20s infinite linear;
+}
+
+@keyframes slideLeft{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-50%);
+    }
 }

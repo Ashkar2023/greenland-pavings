@@ -21,7 +21,7 @@ export const ProductCardsSlider: FC<Props> = ({ products, categoryName }) => {
             <div className="mb-2" id="category-header">
                 <h2 className="border-b inline text-4xl">{categoryName}</h2>
             </div>
-            <div className="slim-scrollbar pb-3 gap-3 flex flex-row overflow-x-scroll">
+            <div className="slim-scrollbar pb-3 pt-1 px-1 gap-3 flex flex-row overflow-x-scroll">
                 {
                     products.map(product => (
                         <Card

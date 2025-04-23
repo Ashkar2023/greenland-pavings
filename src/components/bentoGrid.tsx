@@ -11,8 +11,8 @@ export const BentoGrid : FC<HTMLProps<HTMLDivElement>> = () => {
 
 
     return (
-        <div className="w-1/2 lg:h-full md:h-[60vh] hidden md:block">
-            <div className="size-full grid *:rounded *:overflow-hidden grid-cols-5 grid-rows-3 gap-3" id="grid-container">
+        <div className="mx-7 mt-5 sm:mx-0 sm:mt-0 sm:w-1/2 lg:h-full md:h-[60vh] h-[50vh] md:block">
+            <div className="size-full grid *:rounded *:overflow-hidden *:shadow-sm *:shadow-white grid-cols-5 grid-rows-3 gap-1" id="grid-container">
 
                 <div className="col-span-3 bg-slate-500">
                     <EmblaCarousel images={gridImages[0]} pauseVisible={false} scrollHandlesVisible={false} delay={5100} />

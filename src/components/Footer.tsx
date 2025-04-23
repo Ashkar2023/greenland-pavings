@@ -6,8 +6,7 @@ import { motion } from "framer-motion";
 
 export const Footer: React.FC = () => {
     return (
-        <div className="bg-app-light">
-            {/* lg:rounded-[25%_0%_0%_0%/60%_0%_0%_0%] md:rounded-[20%_0%_0%_0%/30%_0%_0%_0%] rounded-[15%_0%_0%_0%/10%_0%_0%_0%] */}
+        <div className="bg-emerald-50 border-t">
             <footer className="py-12 px-4  bg-white">
                 <div className="max-w-full mx-auto">
                     <div className="md:mx-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">

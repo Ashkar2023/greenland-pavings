@@ -11,7 +11,6 @@ const navItems: { nav: string, path: string }[] = [
     { nav: "home", path: "/" },
     { nav: "products", path: "/products" },
     { nav: "about", path: "/about" },
-    { nav: "projects", path: "/ourProjects" },
 ]
 
 export const RootLayout: FC = () => {
@@ -29,15 +28,19 @@ export const RootLayout: FC = () => {
             <Navbar
                 isBlurred={false}
                 position="sticky"
-                shouldHideOnScroll
+                isBordered
                 disableScrollHandler
                 classNames={{
-                    base: ["h-16", "bg-white", "text-black", "border-b"],
+                    base: ["h-[72px]", "bg-white", "text-black"],
+                    wrapper:["max-w-none", "md:w-11/12","px-4"]
                 }}
             >
                 <NavbarBrand className="cursor-pointer">
                     <img src={AppLogo} alt="" onClick={() => navigate('/')} className="md:max-h-16 max-h-10" />
-                    <h1 className="md:text-[27px] text-base font-semibold" onClick={() => navigate('/')}><span className="text-app-accent">Green</span>land paving</h1>
+                    <div className="flex flex-col" onClick={() => navigate('/')}>
+                        <h1 className="text-xl md:text-[27px] font-bold" ><span className="text-app-accent">Green</span>landpaving</h1>
+                        <p className="text-sm md:text-base font-normal pl-[2px] self-end">Choose the best</p>
+                    </div>
                 </NavbarBrand>
                 <NavbarContent className="text-sm gap-6 hidden sm:flex" justify="end" >
                     {navItems.map(item => (
@@ -57,13 +60,13 @@ export const RootLayout: FC = () => {
 
                 <NavbarMenuToggle className="sm:hidden flex" />
 
-                <NavbarMenu className="text-end pb-3">
+                <NavbarMenu className="text-center pb-3">
                     {navItems.map(item => (
                         <NavbarMenuItem key={item.path} onClick={() => navigate(item.path)} className="cursor-pointer">
                             {item.nav}
                         </NavbarMenuItem>
                     ))}
-                    <div className="flex-grow content-end">
+                    <div className="flex-grow">
                         <Button
                             className="bg-app-accent text-white items-center w-full"
                             startContent={<WhatsappIcon />}

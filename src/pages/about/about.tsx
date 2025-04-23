@@ -3,7 +3,7 @@ import about from '../../assets/about.jpg';
 
 export const About = () => {
     return (
-        <div className="min-h-screen bg-app-light flex flex-col">
+        <div className="min-h-screen bg-emerald-50 flex flex-col">
             {/* Top section */}
             <div className="relative w-full h-[300px] mb-5">
                 {/* Background Image */}
