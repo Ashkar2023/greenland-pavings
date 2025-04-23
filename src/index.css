@@ -53,3 +53,26 @@ html{
         transform: translateX(-50%);
     }
 }
+
+.click-view-btn{
+    top: 57%;
+    left: 35%;
+    animation-name: slide-up;
+    animation-timing-function: cubic-bezier(0.45, 0.78, 0.45, 0.97);
+    animation-duration: 0.3s;
+    transition: transform;
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    50%{
+        opacity: 70%;
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
