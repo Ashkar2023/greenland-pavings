@@ -40,13 +40,13 @@ export const HomePage = () => {
 
             {/* products section */}
             <section id="products" className="w-full">
-                <ProductCardsSlider products={productsJson}  categoryName="Stones"/>
+                <ProductCardsSlider products={productsJson} categoryName="Stones" />
             </section>
             <section id="products" className="w-full">
-                <ProductCardsSlider products={productsJson} categoryName="Pavers"/>
+                <ProductCardsSlider products={productsJson} categoryName="Pavers" />
             </section>
             <section id="products" className="w-full">
-                <ProductCardsSlider products={productsJson} categoryName="Interlocks"/>
+                <ProductCardsSlider products={productsJson} categoryName="Interlocks" />
             </section>
 
 
@@ -62,8 +62,12 @@ export const HomePage = () => {
                 </div>
             </div>
 
-            <div>
-                <ProjectCardsSlider />
+            <div className="pb-16">
+                <div className="my-4 flex justify-center">
+                    <h2 className="text-4xl font-semibold border-b border-app-primary pb-1 px-4">Our Projects</h2>
+                </div>
+                <ProjectCardsSlider dir="left" />
+                <ProjectCardsSlider dir="right" />
             </div>
 
         </div>

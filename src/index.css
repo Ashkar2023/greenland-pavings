@@ -37,21 +37,39 @@ html{
     border-radius: 20px; /* Rounded thumb */
 }
 
-.projects-animate{
-    animation: slide-left 20s infinite linear;
-    
-    &:hover{
+.projects-animate {
+    animation: slide 20s infinite linear;
+
+    &:hover {
         animation-play-state: paused;
     }
 }
 
-@keyframes slide-left{
-    from{
-        transform: translateX(0%);
-    }
-    to{
+@keyframes slide-right {
+    from {
         transform: translateX(-50%);
     }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.projects-animate[data-dir="right"] {
+    animation-name: slide-right;
+    /* fl */
+}
+
+.projects-animate[data-dir="left"] {
+    animation-name: slide-left;
 }
 
 .click-view-btn{
@@ -75,4 +93,39 @@ html{
         opacity: 100%;
         transform: translateY(0%);
     }
+}
+
+.project-card{
+    position: relative;
+    
+    & img{
+        transition: transform 0.4s;
+    }
+
+    &:hover img{
+        transform: scale(1.1);
+    }
+}
+
+.project-card::after{
+    content: "view";
+    font-size: 1.4em;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: opacity .5s;
+    background-color: rgba(33, 35, 34, 0.591);
+}
+
+.project-card:hover::after{
+    opacity: 1;
+    cursor: zoom-in;
 }
