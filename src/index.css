@@ -39,10 +39,14 @@ html{
 
 .projects-animate {
     animation: slide 20s infinite linear;
-
+    
     &:hover {
         animation-play-state: paused;
     }
+}
+
+.paused{
+    animation-play-state: paused;
 }
 
 @keyframes slide-right {
