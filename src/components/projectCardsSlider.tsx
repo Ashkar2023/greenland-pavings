@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import projects from "../../_ourprojects.json";
-import mediumZoom, { Zoom, ZoomOpenOptions } from "medium-zoom";
+import mediumZoom, { Zoom } from "medium-zoom";
 interface Props {
     dir: "left" | "right"
 }
@@ -12,19 +12,17 @@ export default function ProjectCardsSlider({ dir }: Props) {
 
     useEffect(() => {
         zoomRef.current = mediumZoom("[data-image-zoomable]", {
-            background: "#d1fae5",
+            background: "#d1fae5"
         })
 
         const projectsContainer = document.getElementsByClassName("projects-animate");
 
 
-        zoomRef.current.on("open", (event) => {
-            console.log(event);
+        zoomRef.current.on("open", () => {
             projectsContainer.item(0)?.classList.add("paused")
         })
         
-        zoomRef.current.on("closed", (event) => {
-            console.log(event);
+        zoomRef.current.on("closed", () => {
             projectsContainer.item(0)?.classList.remove("paused")
         })
 
