@@ -99,15 +99,17 @@ html{
     }
 }
 
-.project-card{
-    position: relative;
-    
-    & img{
-        transition: transform 0.4s;
-    }
+@media (min-width: 768px){
+    .project-card{
+        position: relative;
+        
+        & img{
+            transition: transform 0.4s;
+        }
 
-    &:hover img{
-        transform: scale(1.1);
+        &:hover img{
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -132,4 +134,12 @@ html{
 .project-card:hover::after{
     opacity: 1;
     cursor: zoom-in;
+}
+
+.medium-zoom-overlay{
+    background-color: aliceblue;
+    z-index: 22;
+}
+.medium-zoom-image{
+    z-index: 25;
 }
