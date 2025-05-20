@@ -1,1 +1,145 @@
-@import "tailwindcss"
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* --primary: 0 23 31; */
+    --light: 208 250 229;
+    --secondary: 23 84 90;
+    --accent: 94 199 142;
+    --text-primary: 16 16 16; /* #101010 */
+    --text-secondary: 78 82 80; /* #4e5250 */
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+.no-scrollbar{
+    scrollbar-width: none; /* FireFox */
+    -ms-overflow-style: none;
+}
+
+/* Target WebKit-based browsers */
+.slim-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Change this to adjust the scrollbar width */
+    height: 8px; /* Adjust for horizontal scrollbar */
+}
+
+/* Scrollbar thumb (the draggable part) */
+.slim-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #91a5a663; /* Thumb color */
+    border-radius: 20px; /* Rounded thumb */
+}
+
+.projects-animate {
+    animation: slide 20s infinite linear;
+    
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+.paused{
+    animation-play-state: paused;
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.projects-animate[data-dir="right"] {
+    animation-name: slide-right;
+    /* fl */
+}
+
+.projects-animate[data-dir="left"] {
+    animation-name: slide-left;
+}
+
+.click-view-btn{
+    top: 57%;
+    left: 35%;
+    animation-name: slide-up;
+    animation-timing-function: cubic-bezier(0.45, 0.78, 0.45, 0.97);
+    animation-duration: 0.3s;
+    transition: transform;
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(100%);
+        opacity: 0%;
+    }
+    50%{
+        opacity: 70%;
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
+@media (min-width: 768px){
+    .project-card{
+        position: relative;
+        
+        & img{
+            transition: transform 0.4s;
+        }
+
+        &:hover img{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.project-card::after{
+    content: "view";
+    font-size: 1.4em;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: opacity .5s;
+    background-color: rgba(33, 35, 34, 0.591);
+}
+
+.project-card:hover::after{
+    opacity: 1;
+    cursor: zoom-in;
+}
+
+.medium-zoom-overlay{
+    background-color: aliceblue;
+    z-index: 22;
+}
+.medium-zoom-image{
+    z-index: 25;
+}

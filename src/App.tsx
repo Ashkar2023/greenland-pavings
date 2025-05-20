@@ -1,11 +1,13 @@
+import { HeroUIProvider } from "@heroui/system"
+import { RouterProvider } from "react-router/dom"
+import { appRouter } from "./router/router"
+
 function App() {
 
     return (
-        <>
-            <p className="text-amber-400">
-                Click on the Visdfte and React logos to learn more
-            </p>
-        </>
+        <HeroUIProvider>
+            <RouterProvider router={appRouter} />
+        </HeroUIProvider>
     )
 }
 
