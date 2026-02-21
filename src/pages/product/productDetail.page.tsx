@@ -1,11 +1,13 @@
 import { useParams } from "react-router";
 import productsData from '../../../_products.json'
+import DriveCard from '../../components/drive-card';
 
 interface Product {
     name: string;
     model: string;
     description: string;
     images: string[];
+    driveLink?: string;
 }
 
 export const ProductDetailPage = () => {
@@ -18,8 +20,8 @@ export const ProductDetailPage = () => {
     }
 
     return (
-        <div className="bg-gradient-to-b md:bg-gradient-to-r from-white to-app-light p-4 md:h-screen h-fit">
-            <div className="grid grid-flow-row md:grid-cols-[1fr_1fr] gap-4">
+        <div className="bg-gradient-to-b md:bg-gradient-to-r from-white to-app-light p-4 md:min-h-screen h-fit">
+            <div className="grid grid-flow-row md:grid-cols-[1fr_1fr] gap-4 mb-6">
                 {/* Left Side: Embla Carousel */}
                 <div className="h-[500px] md:h-[600px]  flex justify-center items-center">
                     {/* <div className="w-full h-full"> */}
@@ -37,6 +39,16 @@ export const ProductDetailPage = () => {
                     <p className="text-lg">{product.description}</p>
                 </div>
             </div>
+            
+            {/* Drive Card Section */}
+            {product.driveLink && (
+                <div className="max-w-xl mx-auto mt-8">
+                    <DriveCard 
+                        productName={product.name} 
+                        driveLink={product.driveLink}
+                    />
+                </div>
+            )}
         </div>
     ); 
   

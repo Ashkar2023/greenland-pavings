@@ -1,8 +1,9 @@
 import { InstagramIcon } from "../assets/instagram-icon";
 import { FbIcon } from "../assets/fb-icon";
-import { TwitterIcon } from "../assets/twiiter-icon";
+import { YoutubeIcon } from "../assets/youtube-icon";
 import AppLogo from '../assets/logo.jpg'
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 export const Footer: React.FC = () => {
     return (
@@ -14,11 +15,19 @@ export const Footer: React.FC = () => {
                         <div>
                             <h3 className="text-xl font-semibold mb-4 text-textPrimary">Quick Links</h3>
                             <ul className="space-y-2">
-                                {["Home", "Products", "About us"].map((item) => (
-                                    <li key={item}>
-                                        <a href="#" className="hover:text-gray-900 transition duration-300" aria-label={`Shop ${item}`}>
-                                            {item}
-                                        </a>
+                                {[
+                                    { label: "Home", path: "/" },
+                                    { label: "Products", path: "/products" },
+                                    { label: "About us", path: "/about" }
+                                ].map((item) => (
+                                    <li key={item.path}>
+                                        <Link 
+                                            to={item.path} 
+                                            className="hover:text-gray-900 transition duration-300" 
+                                            aria-label={`Navigate to ${item.label}`}
+                                        >
+                                            {item.label}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>
@@ -29,7 +38,7 @@ export const Footer: React.FC = () => {
                             <h3 className="text-xl font-semibold mb-4 text-textPrimary">Connect With Us</h3>
                             <div className="flex space-x-4 mb-6">
                                 <motion.a
-                                    href="https://www.instagram.com/"
+                                    href="https://www.instagram.com/greenlandpaving?igsh=NzB3YngxcXQ2bm9t&utm_source=qr"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     whileHover={{ scale: 1.2, y: -5 }}
@@ -40,7 +49,7 @@ export const Footer: React.FC = () => {
                                 </motion.a>
 
                                 <motion.a
-                                    href="https://www.facebook.com/"
+                                    href="https://www.facebook.com/share/17ysJBvayt/?mibextid=wwXIfr"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     whileHover={{ scale: 1.2, y: -5 }}
@@ -51,14 +60,14 @@ export const Footer: React.FC = () => {
                                 </motion.a>
 
                                 <motion.a
-                                    href="https://twitter.com/"
+                                    href="https://youtube.com/@greenlandpaving?si=dCge3-bHB9sfTO3F"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     whileHover={{ scale: 1.2, y: -5 }}
                                     whileTap={{ scale: 0.9 }}
                                     transition={{ type: "spring", stiffness: 300 }}
                                 >
-                                    <TwitterIcon />
+                                    <YoutubeIcon />
                                 </motion.a>
                             </div>
                         </div>
