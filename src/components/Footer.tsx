@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
 
                                 <div className="flex items-center space-x-2">
                                     <span className="font-medium">Email:</span>
-                                    <a href="mailto:sales@pgpavers.com" className="text-blue-500 hover:underline">
+                                    <a href="mailto:greenlandpaving@gmail.com" className="text-blue-500 hover:underline">
                                         greenlandpaving@gmail.com
                                     </a>
                                 </div>
