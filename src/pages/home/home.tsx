@@ -67,7 +67,6 @@ export const HomePage = () => {
                     <h2 className="text-4xl font-semibold border-b border-app-primary pb-1 px-4">Our Projects</h2>
                 </div>
                 <ProjectCardsSlider dir="left" />
-                <ProjectCardsSlider dir="right" />
             </div>
 
         </div>
