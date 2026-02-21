@@ -1,8 +1,8 @@
 import { InstagramIcon } from "../assets/instagram-icon";
 import { FbIcon } from "../assets/fb-icon";
-import { YoutubeIcon } from "../assets/youtube-icon";
 import AppLogo from '../assets/logo.jpg'
 import { motion } from "framer-motion";
+import { YoutubeIcon } from "../assets/youtube-icon";
 import { Link } from "react-router";
 
 export const Footer: React.FC = () => {
@@ -85,13 +85,13 @@ export const Footer: React.FC = () => {
 
                                 <div className="flex items-center space-x-2">
                                     <span className="font-medium">Call:</span>
-                                    <span>+91 95447 90002 / 98470 44660</span>
+                                    <span>+91 7012889427</span>
                                 </div>
 
                                 <div className="flex items-center space-x-2">
                                     <span className="font-medium">Email:</span>
                                     <a href="mailto:sales@pgpavers.com" className="text-blue-500 hover:underline">
-                                        sales@pgpavers.com
+                                        greenlandpaving@gmail.com
                                     </a>
                                 </div>
                             </div>
