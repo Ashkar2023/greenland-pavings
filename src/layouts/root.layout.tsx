@@ -71,7 +71,7 @@ export const RootLayout: FC = () => {
                             className="bg-app-accent text-white items-center w-full"
                             startContent={<WhatsappIcon />}
                             size="sm"
-                            onPress={() => window.open('https://wa.me/9539524752', '_blank')}
+                            onPress={() => window.open('https://wa.me/7012889427', '_blank')}
                         >
                             Enquire
                         </Button>

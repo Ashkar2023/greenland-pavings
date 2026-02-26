@@ -42,7 +42,7 @@ export const ProductDetailPage = () => {
             
             {/* Drive Card Section */}
             {product.driveLink && (
-                <div className="max-w-xl mx-auto mt-8">
+                <div className="max-w-xl mx-auto mt-8 md:-translate-y-full">
                     <DriveCard 
                         productName={product.name} 
                         driveLink={product.driveLink}
