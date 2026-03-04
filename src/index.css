@@ -221,6 +221,7 @@ html {
     z-index: 10;
     transition: opacity .5s;
     background-color: rgba(33, 35, 34, 0.591);
+    pointer-events: none;
 }
 
 .project-card:hover::after {
