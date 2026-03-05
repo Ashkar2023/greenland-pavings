@@ -46,24 +46,22 @@ export const HomePage = () => {
                 <ProductCardsSlider products={productsJson} categoryName="Stones" />
             </section>
 
-
-            <div className="flex">
-                <div className="w-full flex justify-center ">
-                    <Button
-                        className="mt-2 px-24 bg-white mb-8 border"
-                        onPress={() => navigate(`/products`)}
-                    >
-                        <h1 className="">View more</h1>
-                        <ChevronsRight className="group-hover:translate-x-2 transition-transform" />
-                    </Button>
-                </div>
-            </div>
-
-            <div className="pb-16">
+            <div className="pb-16 mt-8">
                 <div className="my-4 flex justify-center">
                     <h2 className="text-4xl font-semibold border-b border-app-primary pb-1 px-4">Our Projects</h2>
                 </div>
                 <ProjectCardsSlider dir="left" />
+                <div className="flex">
+                    <div className="w-full flex justify-center ">
+                        <Button
+                            className="mt-2 px-24 bg-white mb-8 border"
+                            onPress={() => navigate(`/products`)}
+                        >
+                            <h1 className="">View all projects</h1>
+                            <ChevronsRight className="group-hover:translate-x-2 transition-transform" />
+                        </Button>
+                    </div>
+                </div>
             </div>
 
         </div>
