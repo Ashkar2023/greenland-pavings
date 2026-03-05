@@ -40,13 +40,10 @@ export const HomePage = () => {
 
             {/* products section */}
             <section id="products" className="w-full">
-                <ProductCardsSlider products={productsJson} categoryName="Stones" />
-            </section>
-            <section id="products" className="w-full">
                 <ProductCardsSlider products={productsJson} categoryName="Pavers" />
             </section>
             <section id="products" className="w-full">
-                <ProductCardsSlider products={productsJson} categoryName="Interlocks" />
+                <ProductCardsSlider products={productsJson} categoryName="Stones" />
             </section>
 
 
