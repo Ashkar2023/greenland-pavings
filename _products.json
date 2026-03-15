@@ -16,12 +16,13 @@
       "driveLink": "https://sites.google.com/view/never-stone/home"
     },
     {
-      "name": "GLEN STONE",
-      "model": "ES-003",
-      "dimensions": "97 × 97 × 60 mm",
-      "description": "Natural earth-toned stone paver for a rustic outdoor appeal.",
-      "images": ["/products/earth.png"],
-      "driveLink": "https://sites.google.com/view/glenstone/home"
+        "name": "GLEN STONE",
+        "model": "ES-003",
+        "description": "Natural earth-toned stone paver for a rustic outdoor appeal.",
+        "images": [
+            "/products/earth.png"
+        ],
+        "driveLink": "https://sites.google.com/view/glenstone/home"
     },
     {
       "name": "ZIG-ZAG PAVER",
