@@ -1,74 +1,66 @@
 [
     {
-        "name": "SWALE STONE",
-        "model": "BP-008",
-        "description": "Compact and strong bedrock paver ideal for heavy-load areas.",
-        "images": [
-            "/products/bedrock.png"
-        ],
-        "driveLink": "https://sites.google.com/view/swalestone/home"
+      "name": "SWALE STONE",
+      "model": "BP-008",
+      "dimensions": "154 × 104 × 60 mm",
+      "description": "Compact and strong bedrock paver ideal for heavy-load areas.",
+      "images": ["/products/bedrock.png"],
+      "driveLink": "https://sites.google.com/view/swalestone/home"
     },
     {
-        "name": "NEVER STONE",
-        "model": "NFP-007",
-        "description": "UV-resistant paver designed to maintain color vibrancy over time.",
-        "images": [
-            "/products/never.png"
-        ],
-        "driveLink": "https://sites.google.com/view/never-stone/home"
+      "name": "NEVER STONE",
+      "model": "NFP-007",
+      "dimensions": "380 × 190 × 60 mm",
+      "description": "UV-resistant paver designed to maintain color vibrancy over time.",
+      "images": ["/products/never.png"],
+      "driveLink": "https://sites.google.com/view/never-stone/home"
     },
     {
-        "name": "GLEN STONE",
-        "model": "ES-003",
-        "description": "Natural earth-toned stone paver for a rustic outdoor appeal.",
-        "images": [
-            "/products/earth.png"
-        ],
-        "driveLink": "https://sites.google.com/view/glenstone/home"
+      "name": "GLEN STONE",
+      "model": "ES-003",
+      "dimensions": "97 × 97 × 60 mm",
+      "description": "Natural earth-toned stone paver for a rustic outdoor appeal.",
+      "images": ["/products/earth.png"],
+      "driveLink": "https://sites.google.com/view/glenstone/home"
     },
     {
-        "name": "ZIG-ZAG PAVER",
-        "model": "ZP-001",
-        "description": "Interlocking zigzag paver known for its strength and durability.",
-        "images": [
-            "/products/zigzag.png"
-        ],
-        "driveLink": "https://sites.google.com/view/zigzag123/home"
+      "name": "ZIG-ZAG PAVER",
+      "model": "ZP-001",
+      "dimensions": "250 × 125 × 80 mm",
+      "description": "Interlocking zigzag paver known for its strength and durability.",
+      "images": ["/products/zigzag.png"],
+      "driveLink": "https://sites.google.com/view/zigzag123/home"
     },
     {
-        "name": "NEDA STONE",
-        "model": "DP-002",
-        "description": "Rectangular paver with a smooth finish, ideal for pathways and patios.",
-        "images": [
-            "/products/dummy.png"
-        ],
-        "driveLink": "https://sites.google.com/view/nedastone/home"
+      "name": "NEDA STONE",
+      "model": "DP-002",
+      "dimensions": "380 × 190 × 60 mm",
+      "description": "Rectangular paver with a smooth finish, ideal for pathways and patios.",
+      "images": ["/products/dummy.png"],
+      "driveLink": "https://sites.google.com/view/nedastone/home"
     },
     {
-        "name": "LINE GRASS PAVER",
-        "model": "LGP-004",
-        "description": "Innovative grass paver allowing for greenery integration in driveways.",
-        "images": [
-            "/products/linegrasspaver.png"
-        ],
-        "driveLink": "https://sites.google.com/view/linegrasspevar/home"
+      "name": "LINE GRASS PAVER",
+      "model": "LGP-004",
+      "dimensions": "300 × 300 × 80 mm",
+      "description": "Innovative grass paver allowing for greenery integration in driveways.",
+      "images": ["/products/linegrasspaver.png"],
+      "driveLink": "https://sites.google.com/view/linegrasspevar/home"
     },
     {
-        "name": "COBBLE STONE",
-        "model": "CS-005",
-        "description": "Classic cobblestone paver for traditional and elegant designs.",
-        "images": [
-            "/products/cobil.png"
-        ],
-        "driveLink": "https://sites.google.com/view/cobil-stone/home"
+      "name": "COBBLE STONE",
+      "model": "CS-005",
+      "dimensions": "114 × 114 × 60 mm",
+      "description": "Classic cobblestone paver for traditional and elegant designs.",
+      "images": ["/products/cobil.png"],
+      "driveLink": "https://sites.google.com/view/cobil-stone/home"
     },
     {
-        "name": "LINE STONE",
-        "model": "LP-006",
-        "description": "Modern linear paver with a sleek and contemporary look.",
-        "images": [
-            "/products/line.png"
-        ],
-        "driveLink": "https://sites.google.com/view/linestonephoto/home"
+      "name": "LINE STONE",
+      "model": "LP-006",
+      "dimensions": "254 × 254 × 60 mm",
+      "description": "Modern linear paver with a sleek and contemporary look.",
+      "images": ["/products/line.png"],
+      "driveLink": "https://sites.google.com/view/linestonephoto/home"
     }
-]
+  ]

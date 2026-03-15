@@ -7,6 +7,7 @@ interface Product {
     model: string;
     description: string;
     images: string[];
+    dimensions: string;
     driveLink?: string;
 }
 
@@ -36,8 +37,10 @@ export const ProductDetailPage = () => {
                 {/* Right Side: Product Details */}
                 <div className=" h-full w-full p-6 flex flex-col justify-center">
                     <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+                    <p className="text-lg font-bold">{product.dimensions}</p>
                     <p className="text-lg">{product.description}</p>
                 </div>
+                
             </div>
             
             {/* Drive Card Section */}
