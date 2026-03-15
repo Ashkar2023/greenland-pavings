@@ -2,7 +2,6 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarMenu, NavbarMenuItem, NavbarM
 import { FC, useEffect } from "react"
 import AppLogo from "../assets/logo.jpg"
 import { Outlet, useLocation } from "react-router"
-import { Button } from "@heroui/button"
 import { WhatsappIcon } from "../assets/whatsapp-icon"
 import { Footer } from "../components/Footer"
 import { useNavigate } from "react-router"
@@ -48,14 +47,6 @@ export const RootLayout: FC = () => {
                             {item.nav}
                         </NavbarMenuItem>
                     ))}
-                    <Button
-                        className="bg-app-accent text-white items-center"
-                        startContent={<WhatsappIcon />}
-                        size="sm"
-                        onPress={() => window.open('https://wa.me/7012889427', '_blank')}
-                    >
-                        Enquire
-                    </Button>
                 </NavbarContent>
 
                 <NavbarMenuToggle className="sm:hidden flex" />
@@ -66,21 +57,18 @@ export const RootLayout: FC = () => {
                             {item.nav}
                         </NavbarMenuItem>
                     ))}
-                    <div className="flex-grow">
-                        <Button
-                            className="bg-app-accent text-white items-center w-full"
-                            startContent={<WhatsappIcon />}
-                            size="sm"
-                            onPress={() => window.open('https://wa.me/7012889427', '_blank')}
-                        >
-                            Enquire
-                        </Button>
-                    </div>
                 </NavbarMenu>
             </Navbar>
 
             {/* Content */}
             <Outlet />
+
+            {/* Floating WhatsApp */}
+            <div className="fixed p-2 cursor-pointer bottom-5 right-5 rounded-full z-50 bg-green-500 hover:bg-green-600 transition-colors">
+                <a href="https://wa.me/7012889427" target="_blank">
+                    <WhatsappIcon className="w-6 h-6" />
+                </a>
+            </div>
 
             {/* Footer */}
             <Footer />
